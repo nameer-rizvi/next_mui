@@ -7,5 +7,5 @@ export * from "./APP_TWITTER_CARD";
 export * from "./APP_TYPE";
 export * from "./APP_VIEWPORT";
 export * from "./LOCALSTORAGE_MODE";
-export * from "./STRING_LOREM_LONG";
+export * from "./STRING_LOREM_IPSUM";
 export * from "./STYLE_THEMES";

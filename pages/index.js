@@ -1,5 +1,5 @@
 import Typography from "@mui/material/Typography";
-import { APP_NAME, APP_DESCRIPTION, STRING_LOREM_LONG } from "../constant";
+import { APP_NAME, APP_DESCRIPTION, STRING_LOREM_IPSUM } from "../constant";
 import { ThemeToggle } from "../components";
 
 const Home = () => (
@@ -10,7 +10,7 @@ const Home = () => (
     <Typography variant="h2" gutterBottom>
       {APP_DESCRIPTION}
     </Typography>
-    {STRING_LOREM_LONG.map((i) => (
+    {STRING_LOREM_IPSUM.map((i) => (
       <Typography variant="body1" gutterBottom>
         {i}
       </Typography>
