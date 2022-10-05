@@ -10,8 +10,8 @@ const Home = () => (
     <Typography variant="h2" gutterBottom>
       {APP_DESCRIPTION}
     </Typography>
-    {STRING_LOREM_IPSUM.map((i) => (
-      <Typography variant="body1" gutterBottom>
+    {STRING_LOREM_IPSUM.map((i, index) => (
+      <Typography key={index} variant="body1" gutterBottom>
         {i}
       </Typography>
     ))}
