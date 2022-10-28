@@ -1,3 +1,6 @@
+export * from "./API_DATA_CLEANUP";
+export * from "./API_DATA_ENDPOINT";
+export * from "./API_DATA_POLL";
 export * from "./APP_DESCRIPTION";
 export * from "./APP_FAVICON";
 export * from "./APP_IMAGE";
@@ -6,6 +9,8 @@ export * from "./APP_ORIGIN";
 export * from "./APP_TWITTER_CARD";
 export * from "./APP_TYPE";
 export * from "./APP_VIEWPORT";
-export * from "./LOCALSTORAGE_MODE";
+export * from "./LOCALSTORE_DATA_DEFAULT_VALUE";
+export * from "./LOCALSTORE_DATA_KEY";
+export * from "./LOCALSTORE_MODE_KEY";
 export * from "./STRING_LOREM_IPSUM";
 export * from "./STYLE_THEMES";

@@ -4,7 +4,7 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import "../styles/globals.css";
 import { HTMLHead } from "../components";
-import { ThemeProvider } from "../providers";
+import { ThemeProvider, DataProvider } from "../providers";
 import CssBaseline from "@mui/material/CssBaseline";
 
 const MyApp = ({ Component, pageProps }) => (
@@ -12,7 +12,9 @@ const MyApp = ({ Component, pageProps }) => (
     <HTMLHead />
     <ThemeProvider>
       <CssBaseline />
-      <Component {...pageProps} />
+      <DataProvider>
+        <Component {...pageProps} />
+      </DataProvider>
     </ThemeProvider>
   </>
 );

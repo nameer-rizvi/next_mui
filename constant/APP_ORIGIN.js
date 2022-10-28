@@ -1,1 +1,4 @@
-export const APP_ORIGIN = "http://localhost:3000";
+export const APP_ORIGIN =
+  !process.env.NODE_ENV || process.env.NODE_ENV === "development"
+    ? "http://localhost:3000"
+    : "https://website.com";

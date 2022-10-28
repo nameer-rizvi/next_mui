@@ -1,4 +1,5 @@
 import NextHead from "next/head";
+// import NextScript from "next/script";
 import {
   APP_NAME,
   APP_DESCRIPTION,
@@ -27,6 +28,6 @@ export const HTMLHead = () => (
     <meta property="twitter:image" content={APP_IMAGE} />
     <link rel="icon" href={APP_FAVICON} />
     <meta name="viewport" content={APP_VIEWPORT} />
-    {/*<script async src={GOOGLE_TAG_MANAGER_SRC} />*/}
+    {/*<NextScript async src={GOOGLE_TAG_MANAGER_SRC} />*/}
   </NextHead>
 );

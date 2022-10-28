@@ -1,0 +1,1 @@
+export const LOCALSTORE_DATA_DEFAULT_VALUE = {};
