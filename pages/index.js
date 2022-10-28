@@ -1,4 +1,3 @@
-import { useCSR } from "../hooks";
 import { useContext } from "react";
 import { DataContext } from "../context";
 import { Main, ThemeToggle } from "../components";
@@ -6,8 +5,6 @@ import Typography from "@mui/material/Typography";
 import { APP_NAME, APP_DESCRIPTION, STRING_LOREM_IPSUM } from "../constant";
 
 function Home() {
-  const csr = useCSR();
-
   const dataContext = useContext(DataContext);
 
   return (
@@ -24,7 +21,7 @@ function Home() {
         </Typography>
       ))}
       <ThemeToggle />
-      {csr.render && dataContext.data?.id && (
+      {dataContext.render && dataContext.data?.id && (
         <Typography variant="small" sx={{ fontWeight: "bold" }}>
           {"PAGE ID:"} {dataContext.data?.id?.toUpperCase()}
         </Typography>

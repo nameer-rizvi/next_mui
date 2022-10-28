@@ -1,3 +1,4 @@
+import { useCSR } from "./useCSR";
 import { useLocalStore } from "./useLocalStore";
 import useAsyncFetch from "async-fetch";
 import {
@@ -9,6 +10,8 @@ import {
 } from "../constant";
 
 export function useData() {
+  const csr = useCSR();
+
   const localStore = useLocalStore(
     LOCALSTORE_DATA_KEY,
     LOCALSTORE_DATA_DEFAULT_VALUE
@@ -21,5 +24,5 @@ export function useData() {
     onSuccess: localStore.update,
   });
 
-  return { ...request, data: request.data || localStore.value };
+  return { ...csr, ...request, data: request.data || localStore.value };
 }
