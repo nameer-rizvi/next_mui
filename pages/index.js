@@ -23,7 +23,7 @@ function Home() {
       <ThemeToggle />
       {dataContext.render && dataContext.data?.id && (
         <Typography variant="small" sx={{ fontWeight: "bold" }}>
-          {"PAGE ID:"} {dataContext.data?.id?.toUpperCase()}
+          {`PAGE ID: ${dataContext.data?.id?.toUpperCase()}`}
         </Typography>
       )}
     </Main>
